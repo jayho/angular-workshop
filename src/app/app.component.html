@@ -1,3 +1,15 @@
-<h1>
-  {{title}}
-</h1>
+<header>
+  <a [routerLink]="['motd']">Motd</a>
+  <a [routerLink]="['clock']">Clock</a>
+  <a [routerLink]="['cart']">Cart</a>
+  <a [routerLink]="['add']">Add</a>
+  <a [routerLink]="['leader']">Leader</a>
+  <a [routerLink]="['clock2']">Clock2</a>
+</header>
+<main>
+  <h1>
+    {{title}}
+  </h1>
+  <router-outlet></router-outlet>
+</main>
+<footer><p>Angular Workshop App</p></footer>

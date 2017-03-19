@@ -1,0 +1,7 @@
+<h1>Leader Board</h1>
+<h2>Using Promises</h2>
+<div *ngFor="let player of players | async">{{player.name}}: {{player.points}}</div>
+<h2>Using Observables</h2>
+<div *ngFor="let player2 of players2 | async">{{(player2 | async)?.name}}: {{(player2 | async)?.points}}</div>
+<h2>Using ForkJoin</h2>
+<div *ngFor="let player3 of players3 | async">{{player3.name}}: {{player3.points}}</div>

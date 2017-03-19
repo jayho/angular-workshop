@@ -1,0 +1,17 @@
+<h1>Clock2</h1>
+<div *ngIf="isVisible">
+  <div>FirstValue: {{firstValue}}</div>
+  <div>First: {{first | async}}</div>
+  <div>Second: {{second | async}}</div>
+  <div>Third: {{third | async}}</div>
+  <!--<div>Third: {{third | async}}</div>-->
+  <!--<div>Third: {{third | async}}</div>-->
+  <div>Fourth: {{fourth | async}}</div>
+</div>
+<div class="container">
+  <form (ngSubmit)="toggle()" #loginForm="ngForm">
+    <button type="submit" class="btn btn-default" [disabled]="!loginForm.form.valid">
+      Toggle
+    </button>
+  </form>
+</div>
